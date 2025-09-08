@@ -1,0 +1,7 @@
+TEST.html
+.parcel-cache/
+node_modules/
+dist/
+build/
+.idea/
+.vscode/
