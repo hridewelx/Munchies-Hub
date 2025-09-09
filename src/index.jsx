@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Home from '../Component/Home';
 import RestaurantsOnlineDelivery from '../Component/RestaurantsOnlineDelivery';
-import { BrowserRouter, Route, Routes } from 'react-router';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import RestaurantMenu from '../Component/RestaurantMenu';
 
 function App() {
     return (
@@ -11,6 +12,7 @@ function App() {
                 <Route index element={<Home />} />
                 {/* <Route path="/" element={<Home />} /> */}
                 <Route path="/restaurants" element={<RestaurantsOnlineDelivery />} />
+                <Route path="/city/delhi/:id/" element={<RestaurantMenu />} />
             </Routes>
         </BrowserRouter>
     );

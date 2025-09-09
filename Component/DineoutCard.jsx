@@ -1,11 +1,11 @@
 export default function DineoutCard({ data }) {
   console.log(data);
   return (
-    <div className="w-81.5 bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 ease-in-out">
+    <div className="self-start w-81.5 mb-20 bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 ease-in-out">
       <div className="relative">
         <a href={data?.cta?.link}>
           <img
-            className="w-81.5 h-47.25 object-cover"
+            className="w-81.5 object-cover"
             src={`https://media-assets.swiggy.com/swiggy/image/upload/${data?.info?.mediaFiles[0]?.url}`}
             alt=""
           />
@@ -20,23 +20,23 @@ export default function DineoutCard({ data }) {
         </a>
       </div>
 
-      <div className="w-81.5 h-47.25 pt-2 px-3 pb-3">
-        <div className="mt-1 text-[13px] w-full flex justify-between">
+      <div className="w-81.5 pt-2 px-3 pb-3">
+        <div className="mt-1 text-[15px] w-full flex justify-between">
           <div>{data?.info?.cuisines?.join(" • ")}</div>
           <div>{data?.info?.costForTwo}</div>
         </div>
 
-        <div className="mt-1 text-[13px] w-full flex justify-between">
+        <div className="mt-1 text-[14px] w-full flex justify-between">
           <div>{data?.info?.locality}</div>
           <div>{data?.info?.locationInfo?.distanceString}</div>
         </div>
 
-        <div className="flex gap-2">
+        <div className="flex gap-2 mt-1">
           {data?.info?.vendorOffer?.offerHighlights?.map((value, index) => {
             return (
               <span
                 key={index}
-                className="flex items-center gap-2 px-2 py-1 text-[13px] rounded-xl w-31 bg-gray-100"
+                className="mt-1 flex items-center gap-2 px-2 py-1 text-[13px] rounded-xl w-31 bg-gray-100"
               >
                 <img
                   className="w-4 h-4"
