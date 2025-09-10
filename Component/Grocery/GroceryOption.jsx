@@ -1,4 +1,4 @@
-import GroceryData from "../Utils/GroceryData"
+import GroceryData from "../../Utils/GroceryData"
 import GroceryCard from "./GroceryCard"
 
 export default function GroceryOption(){

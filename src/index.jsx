@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Home from '../Component/Home';
-import RestaurantsOnlineDelivery from '../Component/RestaurantsOnlineDelivery';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import RestaurantMenu from '../Component/RestaurantMenu';
+import RestaurantsOnlineDelivery from '../Component/Restaurants/RestaurantsList/RestaurantsOnlineDelivery';
+import { BrowserRouter, Route, Routes } from 'react-router';
+import RestaurantMenu from '../Component/Restaurants/IndividualRestaurant/RestaurantMenu';
 
 function App() {
     return (

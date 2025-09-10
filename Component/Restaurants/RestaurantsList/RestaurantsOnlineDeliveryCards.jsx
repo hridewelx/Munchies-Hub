@@ -1,8 +1,8 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 
 export default function RestaurantsOnlineDeliveryCards({ restData }) {
   return (
-    <Link to={`/city/delhi/${restData?.info?.id}/`}>
+    <Link to={`/city/delhi/${restData?.info?.id}/`}  target="_blank" rel="noopener noreferrer">
       <div className="mt-10 rounded-2xl shadow-sm hover:shadow-lg hover:scale-95 transition overflow-hidden w-[370px]">
         <div className="relative">
           {/* Image */}

@@ -1,4 +1,4 @@
-import FoodData from "../Utils/FoodData";
+import FoodData from "../../Utils/FoodData";
 import FoodCard from "./FoodCard";
 
 export default function FoodItem() {

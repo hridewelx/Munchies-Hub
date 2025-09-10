@@ -1,7 +1,7 @@
 import Header from "./Header";
-import FoodOption from "./FoodOption";
-import GroceryOption from "./GroceryOption";
-import DineoutOption from "./DineoutOption";
+import FoodOption from "./Food/FoodOption";
+import GroceryOption from "./Grocery/GroceryOption";
+import DineoutOption from "./Dineout/DineoutOption";
 
 export default function Home() {
     return (
