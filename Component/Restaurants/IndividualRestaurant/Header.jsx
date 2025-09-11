@@ -1,5 +1,5 @@
 export default function Header({ headerInfo }) {
-  console.log(headerInfo);
+  // console.log(headerInfo);
   return (
     <div className="mb-4">
       <h1 className="font-extrabold text-4xl mb-10">{headerInfo?.name}</h1>

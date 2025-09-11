@@ -4,6 +4,7 @@ import Home from '../Component/Home';
 import RestaurantsOnlineDelivery from '../Component/Restaurants/RestaurantsList/RestaurantsOnlineDelivery';
 import { BrowserRouter, Route, Routes } from 'react-router';
 import RestaurantMenu from '../Component/Restaurants/IndividualRestaurant/RestaurantMenu';
+import SearchFoodItem from '../Component/Restaurants/IndividualRestaurant/SearchFoodItem';
 
 function App() {
     return (
@@ -13,6 +14,7 @@ function App() {
                 {/* <Route path="/" element={<Home />} /> */}
                 <Route path="/restaurants" element={<RestaurantsOnlineDelivery />} />
                 <Route path="/city/delhi/:id/" element={<RestaurantMenu />} />
+                <Route path="/city/delhi/:id/search" element={<SearchFoodItem />} />
             </Routes>
         </BrowserRouter>
     );
